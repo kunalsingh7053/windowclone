@@ -399,6 +399,52 @@ if (e) {
   map.style.bottom = '-100%';
   
 }
+let ntc = document.querySelectorAll('.ntc');
+ntc.forEach((e)=>{
+  e.addEventListener('click',function(){
+    if( e.style.backgroundColor == 'rgba(128, 128, 128, 0.3)')
+    {
+      
+      e.style.backgroundColor = '#0A8BFF';
+
+    }
+        else{
+      e.style.backgroundColor = 'rgba(128, 128, 128, 0.3)';
+
+    }
+  })
+})
+const slider = document.getElementById('brightnessSlider');
+const dimOverlay = document.getElementById('screenDim');
+
+slider.addEventListener('input', function () {
+  const value = this.value;
+
+  // Slider background update (visual)
+  this.style.background = `linear-gradient(to right, #00baff ${value}%, #777 ${value}%)`;
+
+  // Simulated screen dimming (opacity increases as brightness goes down)
+  let brightness = value / 100;
+  dimOverlay.style.opacity = (1 - brightness) * 0.6; // max darkness = 0.6
+});
+let clickbrithness =  document.querySelector('.clickbrithness');
+let brithness = document.querySelector('.brithness');
+clickbrithness.addEventListener('click',function(e){
+    
+  e.stopPropagation();
+ 
+    if(brithness.style.bottom == '-100%')
+  {
+    brithness.style.bottom = '60px';
+    
+  }
+  else{
+    brithness.style.bottom = '-100%';
+    
+  }
+  
+})
+
 
   // ✅ Auto-close Menus on Outside Click
   document.addEventListener('click', function () {
@@ -413,6 +459,7 @@ if (e) {
     foldermenu.style.display = "none";
         sidebar.style.left = '-100%'; 
   calcmenu.style.bottom = '-100%';
+    brithness.style.bottom = '-100%';
 
   });
 

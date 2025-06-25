@@ -9,7 +9,49 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  
+  <div id="screenDim"></div>
+
+  <div class="brithness">
+    <div class="networkcomponents">
+    
+      <div class="ntc">
+   <i class="fa-solid fa-wifi fa-sm" ></i>
+      </div>
+
+      <div class="ntc">
+        <i class="fa-brands fa-bluetooth"></i>
+      </div>
+
+      <div class="ntc">
+        <i class="fa-solid fa-plane"></i>
+      </div>
+
+      <div class="ntc">
+        
+      <i class="fa-solid fa-battery-empty"></i>
+      
+      </div>
+      <div class="ntc">
+        <i class="fa-solid fa-eye"></i>
+      </div>
+
+      <div class="ntc">
+        <i class="fa-solid fa-person"></i>
+      </div>
+    </div>
+    <hr>
+    <div class="brithnesscomponents">
+  <div class="btc">
+    <i class="fa-solid fa-sun"></i>
+    <input type="range" min="0" max="100" value="60" class="brightness-slider" id="brightnessSlider">
+  </div>
+
+  <div class="vtc">
+    <i class="fa-solid fa-volume-high"></i>
+     <input type="range" min="0" max="100" value="50" class="volume-slider">
+  </div>
+</div>
+  </div>
 <div class="map">
    <div class="mapnav">
     <button class="map-restore-btn"><i class="fa-solid fa-window-restore"></i></button>
@@ -140,9 +182,12 @@ Search
 
       <i class="arrow fa-solid fa-angle-up fa-sm" ></i>
       <span class="lang">ENG</br>IN</span>
-      <i class="fa-solid fa-wifi fa-sm" ></i>
-      <i class="fa-solid fa-volume-high fa-sm"></i>
-      <i class="fa-solid fa-battery-half fa-sm"></i>
+      <span class="clickbrithness" style="height:100%; display: flex; gap: 10px;">
+        <i class="fa-solid fa-wifi fa-sm " ></i>
+        <i class="fa-solid fa-volume-high fa-sm " ></i>
+        <i class="fa-solid fa-battery-half fa-sm " ></i>
+
+      </span>
       <div class="tdmenu">
         <span class="time">20:05</span>
         <br>
