@@ -51,6 +51,7 @@ video {
     width: 100%;
     position: absolute;
     text-align: center;
+    bottom: -100%;
     z-index: 3;
     display: none;
   transition: all 0.5s ease;
@@ -264,7 +265,7 @@ border: 2px solid white;
  position: absolute;
  bottom: -100%;
  left: 40%;  
-  z-index: 5;
+  z-index: 4;
   transition: bottom 0.3s ease-in-out;
   cursor: pointer;
   display: flex;
@@ -312,6 +313,7 @@ margin-bottom: 10px;
   overflow-x: hidden;
   bottom: -100%;
   
+  transition: bottom 0.3s ease-in-out;
 }
 .browser img{
   width: 100%;
@@ -326,9 +328,35 @@ margin-bottom: 10px;
   justify-content: flex-end;
   gap: 10px;
 
+
 }
 .browser button{
   height: 100%;
   width: 40px;
   margin-right: 10px;
+}
+.map{
+      position: absolute; 
+
+
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+    bottom: -100%;
+  transition: bottom 0.3s ease-in-out;
+
+  
+}
+.map iframe{
+  width: 100%;
+  height: 100%;
+}
+.mapnav{
+ width: 100%;
+  height: 40px;
+  background-color: #333333;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
 }
